@@ -1,5 +1,7 @@
 # pretty-term
 
+[![Clojars Project](https://img.shields.io/clojars/v/tcsavage/pretty-term.svg)](https://clojars.org/tcsavage/pretty-term)
+
 Hiccup-like DSL for pretty-printed terminal output.
 
 Pretty-term provides two sets of features under a unified DSL: layout and ANSI formatting.
