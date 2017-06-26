@@ -6,6 +6,27 @@ Hiccup-like DSL for pretty-printed terminal output.
 
 Pretty-term provides two sets of features under a unified DSL: layout and ANSI formatting.
 
+## Example
+
+```clojure
+(def doc
+  [:lines
+    [:bold "This is a heading"]
+    [:bullets
+      [:color :red "This is some red text"]
+      [:lines
+        [:color :green "This is some green text"]
+        "Some extra text"
+        "And some more"]
+      [:color :blue "This is some blue text"]]])
+
+(require '[pretty-term.core :as pretty])
+
+(println (pretty/render doc))
+```
+
+![Output](assets/example.png)
+
 ## API
 
 The namespace `pretty-term.core` exports a single function `(render dsl)` which will interpret the `dsl` input and generate a string.
