@@ -9,7 +9,7 @@ Pretty-term provides two sets of features under a unified DSL: layout and ANSI f
 ## Example
 
 ```clojure
-(def doc
+(def document
   [:lines
     [:bold "This is a heading"]
     [:bullets
@@ -22,7 +22,7 @@ Pretty-term provides two sets of features under a unified DSL: layout and ANSI f
 
 (require '[pretty-term.core :as pretty])
 
-(println (pretty/render doc))
+(println (pretty/render document))
 ```
 
 ![Output](assets/example.png)
