@@ -6,6 +6,8 @@ Hiccup-like DSL for pretty-printed terminal output.
 
 Pretty-term provides two sets of features under a unified DSL: layout and ANSI formatting.
 
+The layout side is based on "The Design of a Pretty-printing Library" _(Hughes 1995)_.
+
 ## Example
 
 ```clojure
